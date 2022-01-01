@@ -5,7 +5,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ## Links
 
 - Solution URL: https://github.com/E1000o/FM3-stats-preview-card-component
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://flamboyant-nobel-8d2640.netlify.app/
 
 ## My process
 
