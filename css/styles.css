@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    height: 100VH;
+    position: relative;
+}
+
+main {
+    width: 77%;
+    max-width: 1111px;
+    min-width: 892px;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.main-content-container {
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 73%;
+    height: 69%;
+    gap: 6.7%; /*was 2em;*/
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+.insights {
+    color: hsl(277, 64%, 61%);
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.stats {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: auto;
+    gap: 17%; /* was 4.25em */
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.3em;
+}
+
+.stats div span:nth-child(1) {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.6rem;
+    font-weight: 700;
+    /*margin-bottom: 0.25em;*/
+}
+
+.stats div span:nth-child(2) {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+.img-div {
+    border-radius: 0 1% 1% 0;
+    width: 49%;
+    max-width: 540px;
+    position: relative;
+}
+
+.img-div img {
+    width: 100%;
+    max-width: 540px;
+    height: 100%;
+    border-radius: 0 1% 1% 0;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 100%, 30%, 0.55);
+    border-radius: 0 1% 1% 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 1180px) {
+
+    main {
+        flex-direction: column-reverse;
+        width: 88%;
+        max-width: 654px;
+        min-width: auto;
+    }
+
+    .main-content-container {
+        width: /*78%*/100%;
+    }
+
+    .main-content {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    header {
+        margin-bottom: 1.5rem;
+        width: 90%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.1rem;
+    }
+
+    .no-wrap {
+        white-space: normal;
+    }
+
+    p {
+        text-align: center;
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .img-div {
+        width: 100%;
+        height: auto;
+        max-width: 654px;
+        max-height: 480px;
+        border-radius: 3% 3% 0 0;
+        margin-bottom: 2.5rem;
+    }
+
+    .img-div img {
+        max-width: 654px;
+        border-radius: 3% 3% 0 0;
+        height: 100%;
+    }
+
+    .overlay {
+        border-radius: 3% 3% 0 0;
+    }
+
+    .mobile-img {
+        display: inline;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .stats {
+        justify-content: space-evenly;
+    }
+
+    .stats div {
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    main {
+        padding-bottom: 1rem;
+        top: 1.5rem;
+        transform: translateX(-50%);
+    }
+
+    .img-div {
+        margin-bottom: 2rem;
+    }
+
+    header {
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .stats div {
+        margin-bottom: 2rem;
+    }
+
+}
